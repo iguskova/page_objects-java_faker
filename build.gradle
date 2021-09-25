@@ -13,12 +13,14 @@ compileTestJava {
 
 dependencies {
     // Selenide
-    testImplementation('com.codeborne:selenide:5.24.2')
+    testImplementation('com.codeborne:selenide:5.24.3')
     testRuntimeOnly('org.slf4j:slf4j-simple:1.7.32')
 
     // JUnit 5
     testImplementation('org.junit.jupiter:junit-jupiter-api:5.8.0')
     testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.8.0')
+    //Java-Faker
+    implementation 'com.github.javafaker:javafaker:1.0.2'
 }
 
 test {
