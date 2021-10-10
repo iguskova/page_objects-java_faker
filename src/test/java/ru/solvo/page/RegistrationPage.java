@@ -18,18 +18,18 @@ public class RegistrationPage {
             subject = $("#subjectsInput"),
             hobby = $("#hobbiesWrapper"),
             pic = $("#uploadPicture"),
-            address=$("#currentAddress"),
-            state=$("#stateCity-wrapper"),
-            city=$("#stateCity-wrapper"),
-            submit= $("#submit"),
+            address = $("#currentAddress"),
+            state = $("#state"),
+            city = $("#city"),
+            submit = $("#submit"),
             checkResults = $(".table-responsive");
     public CalendarComponent calendar = new CalendarComponent();
 
-    public void openPage(){
+    public void openPage() {
         open("/automation-practice-form");
     }
 
-    public RegistrationPage typeFirstName(String value){
+    public RegistrationPage typeFirstName(String value) {
         firstNameInput.setValue(value);
         return this;
     }
@@ -71,14 +71,14 @@ public class RegistrationPage {
         $("#submit").scrollIntoView(true);
         return this;
     }
-    public RegistrationPage chooseState(String value){
-        state.$("#state").click();
-        $("#state").$(byText(value)).click();
+    public RegistrationPage chooseState(String value) {
+        state.click();
+        state.$(byText(value)).click();
         return this;
     }
-    public RegistrationPage chooseCity(String value){
-        city.$("#city").click();
-        $("#city").$(byText(value)).click();
+    public RegistrationPage chooseCity(String value) {
+        city.click();
+        city.$(byText(value)).click();
         return this;
     }
     public void pressSubmit(){
