@@ -1,6 +1,7 @@
 package ru.solvo.tests;
 
 import com.github.javafaker.Faker;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import ru.solvo.page.RegistrationPage;
 
@@ -27,6 +28,7 @@ public class StudentRegistrationFormTest extends TestBase {
 
 
     @Test
+    @DisplayName("Student Registration Form test with java-faker")
     void fillFormTest() {
         registrationPage.openPage();
         registrationPage.typeFirstName(firstName)
